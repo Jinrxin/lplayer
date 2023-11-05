@@ -96,8 +96,8 @@ npm install dashjs --save
     <l-player
       ref="lplayer"
       :option="option"
-      @custom-init="hlsInit"
-      @change-quality="changeQuality"
+      @custom-init="dashInit"
+      @change-quality="setBitrate"
       @loaded-metadata="setQualityList"
     />
   </div>
@@ -128,7 +128,7 @@ const dashInit = (
   dash.initialize(player, src, autoplay, startTime);
 };
 
-/** 获取轨道列表 */
+/** 获取比特率（清晰度）列表 */
 const getBitrateList = () => {
   const qualityList: number[] = [];
   if (dash.isReady())
@@ -153,10 +153,13 @@ const setBitrate = (quality: number) => {
           audio: qualityIndex === -1 && quality === 1 ? true : false,
         },
       },
+      buffer: {
+        fastSwitchEnabled: true,
+      },
     },
   });
   // 开启ABR后此设置会被覆盖
-  dash.setQualityFor("video", qualityIndex, false);
+  dash.setQualityFor("video", qualityIndex, true);
 };
 
 /** 设置清晰度列表 */

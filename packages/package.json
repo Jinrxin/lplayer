@@ -1,0 +1,32 @@
+{
+  "name": "lplayer",
+  "version": "1.0.6",
+  "license": "MIT",
+  "author": "Tyuan",
+  "description": "lplayer-Vue3视频播放器组件",
+  "keywords": [
+    "lplayer",
+    "vue",
+    "player",
+    "video"
+  ],
+  "main": "./dist/lib/index.js",
+  "module": "./dist/es/index.js",
+  "typings": "./dist/es/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/lib/index.js",
+      "import": "./dist/es/index.js"
+    }
+  },
+  "repository": {
+    "url": "https://github.com/kon-mio/lplayer",
+    "type": "github"
+  },
+  "scripts": {
+    "build": "vite build"
+  }
+}

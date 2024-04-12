@@ -1,0 +1,1 @@
+import{_ as t,o as a,c,a as e,e as o}from"./app-a121b844.js";const s={},n=e("h1",{id:"清晰度切换",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#清晰度切换","aria-hidden":"true"},"#"),o(" 清晰度切换")],-1),l=e("ul",null,[e("li",null,"目前清晰度切换仅支持 MSE")],-1),r=[n,l];function _(i,d){return a(),c("div",null,r)}const u=t(s,[["render",_],["__file","quality.html.vue"]]);export{u as default};

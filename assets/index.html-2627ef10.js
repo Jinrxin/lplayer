@@ -1,0 +1,1 @@
+import{_ as n,r as o,o as t,c as a,a as c,b as r}from"./app-a121b844.js";const l={};function s(_,d){const e=o("l-player");return t(),a("div",null,[c("div",null,[r(e)])])}const m=n(l,[["render",s],["__file","index.html.vue"]]);export{m as default};

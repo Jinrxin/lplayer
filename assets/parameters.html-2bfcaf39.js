@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-631f72c3","path":"/guide/parameters.html","title":"参数","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1699160928000,"contributors":[{"name":"TangYuan","email":"2292289473@qq.com","commits":1}]},"filePathRelative":"guide/parameters.md"}');export{e as data};
